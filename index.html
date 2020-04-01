@@ -13,7 +13,7 @@
         <v-app>
           <v-content>
             <v-container>               
-                <v-card>
+                <v-card transition="slide-y-transition">
                     <v-card-title>Projets & Cours</v-card-title>
                     <v-card-subtitle>Du groupe de NSI en 1ère</v-card-subtitle>
                     <v-card-text>Ici vous retouverez les différents cours et projets de la classe de NSI.</v-card-text>
@@ -29,7 +29,7 @@
                 </v-alert>
                 
                 <v-container class="mt-10 d-flex justify-space-around">
-                    <v-btn v-if="!alert" height="200px" width="500px" outlined @click="alert=true">Projets</v-btn>
+                    <v-btn height="200px" width="500px" outlined @click="alert=true">Projets</v-btn>
                     <v-btn height="200px" width="500px" outlined v-on:click="this.window.location.href='cours'">Cours</v-btn>
                 </v-container>
             </v-container>
