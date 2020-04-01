@@ -1,9 +1,4 @@
----
-layout: post
-title:  "Systèmes D'Exploitation"
-date:   2020-03-31 00:42:02 +0200
-categories: jekyll update
----
+
 # Systèmes d'exploitation, TP: Les différences entre Windows et Linux
 ## Partie 1 : Windows
 
