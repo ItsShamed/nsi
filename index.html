@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Repositoire des cours et des projets</title>
+</head>
+<body>
+    <div id="app">
+        <v-app>
+          <v-content>
+            <v-container>               
+                <v-card>
+                    <v-card-title>Projets & Cours</v-card-title>
+                    <v-card-subtitle>Du groupe de NSI en 1ère</v-card-subtitle>
+                    <v-card-text>Ici vous retouverez les différents cours et projets de la classe de NSI.</v-card-text>
+                </v-card>
+
+                <v-container class="mt-10 d-flex justify-space-around">
+                    <v-btn height="200px" width="500px" outlined>Projets</v-btn>
+                    <v-btn height="200px" width="500px" outlined v-on:click="this.window.location.href='cours'">Cours</v-btn>
+                </v-container>
+            </v-container>
+          </v-content>
+        </v-app>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+      <script>
+        new Vue({
+          el: '#app',
+          vuetify: new Vuetify(),
+        })
+      </script>
+</body>
+</html>
