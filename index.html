@@ -18,9 +18,18 @@
                     <v-card-subtitle>Du groupe de NSI en 1ère</v-card-subtitle>
                     <v-card-text>Ici vous retouverez les différents cours et projets de la classe de NSI.</v-card-text>
                 </v-card>
-
+                
+                <v-alert
+                  v-model="alert"
+                  dismissible
+                  type="info"
+                  transition="scale-transition"
+                >
+                    La partie projet n'est pas encore contruite, revenez plus tard :)
+                </v-alert>
+                
                 <v-container class="mt-10 d-flex justify-space-around">
-                    <v-btn height="200px" width="500px" outlined v-on:click="alert('Pas encore contruit :)')">Projets</v-btn>
+                    <v-btn v-if="!alert" height="200px" width="500px" outlined @click="alert=true">Projets</v-btn>
                     <v-btn height="200px" width="500px" outlined v-on:click="this.window.location.href='cours'">Cours</v-btn>
                 </v-container>
             </v-container>
@@ -35,6 +44,13 @@
           el: '#app',
           vuetify: new Vuetify(),
         })
+        export default{
+            data(){
+                return(){
+                    alert: false,
+                }
+            },
+        }
       </script>
 </body>
 </html>
