@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 ---
 layout: post
 title:  "Systèmes D'Exploitation"
 date:   2020-03-31 00:42:02 +0200
 categories: jekyll update
 ---
+=======
+>>>>>>> 0adc13d8db16224162c64a87083b7be1d0ea9a92
 
 # Systèmes d'exploitation, TP: Les différences entre Windows et Linux
 
@@ -566,6 +569,7 @@ gradient@Gradient-PC:~$ nano fichier.txt
 
 > J'utilise une version anglaise car c'est ce qui est installé sur ma machine, vos versions peuvent être différentes.
 
+<<<<<<< HEAD
 On peut remarque que l'interface nous donne quelques indications sur quelques raccoucis à utiliser pour effectuer certaines actions.
 
 Le symbole `^` indique la touche `[Ctrl]` de votre clavier.
@@ -678,3 +682,4 @@ gradient@Gradient-PC:~$
 ## En conslusion
 
 Lorsque vous utilisez Linux, beaucoup de fonctions essentielles se font à la console, malgré une potentielle interface graphique, il est mieux d'apprendre ces commandes, car si vous comptez utiliser Linux, vous passerez beaucoup plus de temps sur la console, que l'interface graphique (dans la plupart des cas, l'interface graphique peut limiter certaines actions).
+=======

@@ -13,14 +13,23 @@
         <v-app>
           <v-content>
             <v-container>               
-                <v-card>
+                <v-card transition="slide-y-transition">
                     <v-card-title>Projets & Cours</v-card-title>
                     <v-card-subtitle>Du groupe de NSI en 1ère</v-card-subtitle>
                     <v-card-text>Ici vous retouverez les différents cours et projets de la classe de NSI.</v-card-text>
                 </v-card>
-
+                
+                <v-alert
+                  v-model="alert"
+                  dismissible
+                  type="info"
+                  transition="scale-transition"
+                >
+                    La partie projet n'est pas encore contruite, revenez plus tard :)
+                </v-alert>
+                
                 <v-container class="mt-10 d-flex justify-space-around">
-                    <v-btn height="200px" width="500px" outlined>Projets</v-btn>
+                    <v-btn height="200px" width="500px" outlined v-on:click="alert=true">Projets</v-btn>
                     <v-btn height="200px" width="500px" outlined v-on:click="this.window.location.href='cours'">Cours</v-btn>
                 </v-container>
             </v-container>
@@ -28,12 +37,15 @@
         </v-app>
       </div>
     
-      <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.x"></script>
       <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
       <script>
         new Vue({
           el: '#app',
           vuetify: new Vuetify(),
+          data:{
+              alert: false,
+          },
         })
       </script>
 </body>
